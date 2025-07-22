@@ -53,7 +53,7 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <div className='text-base text-primary font-medium space-x-5'>
+                <div className='text-base text-primary font-medium space-x-5 lg-block'>
                      <Link to="/login" className='py-2 px-5 border rounded'>LogIn</Link>
                      <Link to="/signup" className='py-2 px-5 border rounded bg-blue text-white'>SignUp</Link>
                 </div>

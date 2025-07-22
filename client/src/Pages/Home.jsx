@@ -76,8 +76,8 @@ export const Home = () => {
         parseInt(maxPrice)<=parseInt(selected) ||
         postingDate>=selected||
         experienceLevel.toLowerCase()===selected.toLowerCase()||
-        salaryType.toLowerCase()===selected.toLowerCase()||
-        employmentType.toLowerCase()===selected.toLowerCase()
+        (employmentType && employmentType.toLowerCase() === selected.toLowerCase()) || // Add null/undefined check for employmentType
+        salaryType.toLowerCase() === selected.toLowerCase()
       ));
       console.log(filteredJobs);
     }
